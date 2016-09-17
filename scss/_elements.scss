@@ -1,0 +1,46 @@
+.button {
+  display: inline-block;
+  min-width: 80px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &.to-sign-in {
+    background-color: #00728d;
+  }
+  &.to-sign-up,
+  &.sign-up {
+    background-color: #3b9b48;
+  }
+  &.log-in {
+    background-color: #454545;
+  }
+  &.cancel {
+    background-color: #b7b7b7;
+  }
+  &.update {
+    background-color: #333;
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.input-wrapper {
+  input {
+    border: 1px solid #878787;
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 20px;
+  }
+}
