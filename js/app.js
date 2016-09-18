@@ -36,4 +36,8 @@ jQuery(document).ready(function(){
 	jQuery('.current-user-avatar img').click(function(event){
 	    event.stopPropagation();
 	});
+
+	jQuery('.nav-icon').click(function(){
+	    jQuery('.main-nav').slideToggle();
+	});
 })
