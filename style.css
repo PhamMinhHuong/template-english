@@ -96,6 +96,15 @@ a:focus {
   margin: 0 auto;
 }
 
+.main-content {
+  position: relative;
+  z-index: 9;
+}
+
+.main-content-inner {
+  position: relative;
+}
+
 .image-wrapper img {
   width: 100%;
 }
@@ -946,6 +955,146 @@ a:focus {
   padding: 4px 5px;
   border: 1px solid #d6d7d7;
   margin-right: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content-inner.examine {
+    min-height: 700px;
+  }
+}
+
+.main-content-inner.examine .examine-content h1 {
+  font-size: 24px;
+  color: #0ca1e0;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.main-content-inner.examine .examine-content .category {
+  color: #0ca1e0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.main-content-inner.examine .examine-content .sentence {
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.main-content-inner.examine .examine-content .instruction img {
+  margin-right: 10px;
+}
+
+.main-content-inner.examine .examine-content .instruction span {
+  color: #217c54;
+  line-height: 20px;
+}
+
+.main-content-inner.examine .examine-content .question {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.main-content-inner.examine .examine-content .question .underline {
+  display: inline-block;
+  width: 80px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.main-content-inner.examine .examine-content .question .underline:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  top: 100%;
+  left: 0;
+}
+
+.main-content-inner.examine .examine-content .options {
+  padding-left: 30px;
+}
+
+.main-content-inner.examine .examine-content .options .answer {
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 26px;
+  text-align: center;
+  border: 2px solid #61fafb;
+  border-radius: 4px;
+  margin-right: 25px;
+  color: #000;
+}
+
+.main-content-inner.examine .examine-result {
+  position: absolute;
+  width: 140px;
+  background-color: #e2e2e2;
+  top: -25px;
+  right: 0;
+}
+
+.main-content-inner.examine .examine-result .title {
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content-inner.examine .examine-result .result {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.main-content-inner.examine .examine-result .result .info {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.main-content-inner.examine .examine-result .result .fg-row {
+  margin-left: -6px;
+  margin-right: -6px;
+  margin: 0 auto;
+}
+
+.main-content-inner.examine .examine-result .result .col-3 {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.main-content-inner.examine .examine-result .result .number {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.main-content-inner.examine .examine-result .result .index {
+  font-size: 12px;
+}
+
+.main-content-inner.examine .examine-result .completed .title {
+  background-color: #00ca28;
+}
+
+.main-content-inner.examine .examine-result .time .title {
+  background-color: #2a559a;
+}
+
+.main-content-inner.examine .examine-result .score .title {
+  background-color: #ff8f2d;
 }
 
 /*# sourceMappingURL=style.css.map */
