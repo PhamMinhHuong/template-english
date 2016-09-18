@@ -418,3 +418,22 @@ a {
     }
   }
 }
+
+.result-info {
+  padding: 0 120px 0 70px;
+  ul {
+    li {
+      @include clearfix;
+      margin-bottom: 5px;
+      .keyword {
+        float: left;
+        span {
+          color: #0303fe;
+        }
+      }
+      .category {
+        float: right;
+      }
+    }
+  }
+}
