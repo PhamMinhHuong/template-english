@@ -17,12 +17,14 @@ jQuery(document).ready(function(){
 
 	jQuery('.to-option').on('click', function(){
 		jQuery('.fg-modal').fadeOut();
-		jQuery('.fg-modal.sign-in-option').fadeIn();
+		jQuery('.fg-modal.sign-in-option').fadeIn().addClass('show');
 	});
 
 	jQuery('.over-out').on('click', function(){
-		overlay.fadeOut();
-		jQuery('.fg-modal').fadeOut();
+		if (!jQuery('.fg-modal.sign-in-option').hasClass('show')) {
+			overlay.fadeOut();
+			jQuery('.fg-modal').fadeOut();
+		}
 	});
 
 	jQuery('.current-user-avatar img').on('click', function(){
@@ -40,4 +42,15 @@ jQuery(document).ready(function(){
 	jQuery('.nav-icon').click(function(){
 	    jQuery('.main-nav').slideToggle();
 	});
+
+	// match height
+    var listWrapper = jQuery('.area-class .fg-row');
+    listWrapper.each(function() {
+    	var maxHeight = -1;
+    	var item = jQuery(this).find('.block-class')
+        maxHeight = maxHeight > item.outerHeight() ? maxHeight : item.outerHeight();
+        item.each(function() {
+	        jQuery(this).outerHeight(maxHeight);
+	    });
+    });
 })
