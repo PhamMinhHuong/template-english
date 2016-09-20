@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiếng Anh - Ví dụ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header clearfix">
+        <div class="wrapper">
+            <a href="index.html" class="site-logo"><img src="images/logo.png" alt="logo"></a>
+            <form action="">
+                <div class="header-search">
+                    <input type="search" name="q" class="header-search-input" maxlength="200" placeholder="Tìm kiếm">
+                    <button type="submit" class="header-search-button"></button>
+                </div>
+            </form>
+            <div class="area-language">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>Tiếng Việt</span>
+                            <img src="images/icons/vietnamese.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>English</span>
+                            <img src="images/icons/english.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <!-- nav wrapper -->
+    <div class="nav-wrapper logged-in">
+        <div class="wrapper clearfix">
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="#">Tiếng Anh</a></li>
+                    <li><a href="#">Toán</a></li>
+                    <li><a href="#">Thống kê</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                </ul>
+            </nav>
+            <span class="nav-icon"></span>
+            <div class="area-user clearfix">
+                <span>Xin chào, <a href="#">Kingsman</a></span>
+                <a href="#" class="current-user-avatar"><img src="images/current-user.png" alt="current-user"></a>
+                <div class="user-nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/current-user.png" alt="current-user">
+                                <span>Kingsman (hiện tại)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/parent.png" alt="parent">
+                                <span>Bố mẹ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/setting.png" alt="setting">
+                                <span>Cài đặt tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/log-out.png" alt="log-out">
+                                <span>Đăng xuất</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /nav wrapper -->
+    <!-- main content -->
+    <main class="main-content">
+        <div class="wrapper">
+            <div class="main-content-inner">
+            	<div class="content-left">
+					<ul class="breadcrumb">
+						<li>Home</li>
+						<li class="active">Paypal</li>
+					</ul>
+					<h1 class="title">Paypal a member</h1>
+					<form class="form-paypal" action="paypal_submit" method="post">
+						<div class="form-section text-form-section">
+							<p class="sub-text">Demo demo demo demo demo demo demo demo demo demo demo demo demo
+								demo demo demo demo demo demo demo demo demo demo demo demo demo.
+							</p>
+						</div>
+						<div class="form-section">
+							<h2 class="section-header">Choose a plan</h2>
+							<div class="input-view  payment-view">
+								<button  class="sub-input option-acitve" type="button">Monthly</button>
+								<button  class="sub-input yearly-input" type="button">Yearly</button>
+							</div>
+						</div>
+						<div class="form-section">
+							<h2 class="section-header">Specify total</h2>
+							<div class="input-view">
+								<span class="number-picker">
+									<button class="decrement decrement-disabled" type="button">
+										<div class="chevron left"></div>
+									</button>
+									<span class="num-children">1</span>
+									<button class="increment" type="button">
+										<div class="chevron right"></div>
+									</button>
+								</span>
+								<span class="add-text">Each additional child is only $4!</span>
+							</div>
+						</div>
+						<div class="form-section">
+							<h2 class="section-header">Choose a product</h2>
+							<div class="input-view subject-view">
+								<button class="sub-input option-active" type="button">
+									<div class="option-name">Math</div>
+									<span class="option-price">
+										<span class="currency-symbol">$</span>
+										9.95
+									</span>
+									<span class="option-term">/mo</span>
+									<div class="core-subject active">
+										<div class="core-subject-left"></div>
+										<div class="core-subject-right"></div>
+									</div>
+								</button>
+								<button class="sub-input" type="button">
+									<div class="option-name">Language arts</div>
+									<span class="option-price">
+										<span class="currency-symbol">$</span>
+										9.95
+									</span>
+									<span class="option-term">/mo</span>
+									<div class="core-subject">
+										<div class="core-subject-left"></div>
+										<div class="core-subject-right"></div>
+									</div>
+								</button>
+								<button class="sub-input" type="button">
+									<div class="option-name">Math & language arts</div>
+									<span class="option-price">
+										<span class="currency-symbol">$</span>
+										9.95
+									</span>
+									<span class="option-term">/mo</span>
+									<div class="core-subject">
+										<div class="core-subject-left"></div>
+										<div class="core-subject-right"></div>
+									</div>
+								</button>
+								<button class="sub-input" type="button">
+									<div class="option-name">All-access package</div>
+									<span class="option-price">
+										<span class="currency-symbol">$</span>
+										9.95
+									</span>
+									<span class="option-term">/mo</span>
+									<div class="core-subject">
+										<div class="core-subject-left"></div>
+										<div class="core-subject-right"></div>
+									</div>
+								</button>
+							</div>
+							<div class="product-view">
+								<div class="product-section-header"></div>
+								<div class="product-description">
+									<div class="sub-product-des pro-math included">
+										<div class="product-icon"></div>
+										<div class="product-name">Math</div>
+										<div class="product-grade">Grades Pre-K–12</div>
+									</div>
+									<div class="sub-product-des pro-language-arts">
+										<div class="product-icon"></div>
+										<div class="product-name">Language arts</div>
+										<div class="product-grade">Grades Pre-K–12</div>
+									</div>
+									<div class="sub-product-des pro-science">
+										<div class="product-icon"></div>
+										<div class="product-name">Science</div>
+										<div class="product-grade">Grades 2–5</div>
+									</div>
+									<div class="sub-product-des pro-social">
+										<div class="product-icon"></div>
+										<div class="product-name">Social studies</div>
+										<div class="product-grade">Grades 2–5</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-view">
+								Your membership will be renewed automatically. You may cancel online anytime.
+							</div>
+						</div>
+						<div class="form-section">
+							<h2 class="section-header">Enter contact information</h2>
+							<div class="input-view name-view">
+								<label class="label-tt" for="name">Full name</label>
+								<input class="sub-input" type="text" name="name" id="name">
+							</div>
+							<div class="input-view email-view">
+								<label class="label-tt" for="email">E-mail</label>
+								<input class="sub-input" type="text" name="email" id="email">
+							</div>
+						</div>
+						<div class="form-section">
+							<h2 class="section-header">Enter payment information</h2>
+							<div class="input-view number-view">
+								<label class="label-tt" for="cc-number">Credit card number</label>
+								<input class="sub-input" type="text" name="cc-number" id="cc-number">
+							</div>
+							<div class="input-view exp-view">
+								<label class="label-tt" for="exp-month">Expiration date</label>
+								<select class="sub-input" type="text" name="exp-moth" id="exp-month">
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+								</select>
+								<span class="exp-divider">/</span>
+								<select class="sub-input" type="text" name="exp-year" id="exp-year">
+									<option value="01">15</option>
+									<option value="02">16</option>
+									<option value="03">17</option>
+									<option value="04">18</option>
+									<option value="05">19</option>
+								</select>
+							</div>
+							<div class="input-view code-view">
+								<label class="label-tt" for="cc-code">
+									Security code
+									<div class="code-help"></div>
+								</label>
+								<input class="sub-input" type="text" name="cc-code" id="cc-code">
+							</div>
+						</div>
+						<small class="small-tos">
+							By clicking
+							<strong class="purchase-tos">Join IXL</strong>
+							, you acknowledge that you have read and agree to our
+							<a href="">Terms of Service</a>
+						</small>
+						<input class="submit-button" type="submit" name="" value="Click Button">
+						<div class="secure-server">
+							<div class="secure-text">Secure</div>
+							<div class="server-text">server</div>
+						</div>
+					</form>
+            	</div>
+            	<div class="aside-right">
+					<ul>
+						<li class="aside-section summary-section">
+							<h3>What parents are saying</h3>
+							<div class="testimonial-text">
+								"IXL makes their regular school work easier and stress-free… The experience we have had with IXL has been totally wonderful and nurturing."
+							</div>
+							<div class="name-address">
+								— Gebre Nida, M.D.
+							</div>
+							<div class="testimonial-img"></div>
+						</li>
+						<li class="aside-section benefits-section">
+							<h3>Benefits of joining</h3>
+							<ul>
+								<li>Demo demo demo</li>
+								<li>Demo demo demo demo</li>
+								<li>Demo demo</li>
+								<li>Demo demo demo</li>
+								<li>Demo demo demo demo demo</li>
+							</ul>
+						</li>
+						<li class="aside-section contact-section">
+							<h3>Contact information</h3>
+							<ul>
+								<li>(+84) 999 9999</li>
+								<li>
+									<a href="">abc@gmail.com</a>
+								</li>
+								<li>
+									<a href="">Paypal FAQ</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+            	</div>
+            </div>
+        </div>
+    </main>
+    <!-- /main content -->
+    <!-- footer -->
+    <footer class="footer clearfix">
+        <div class="wrapper">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo"><img src="images/footer-logo.png" alt="logo"></a>
+                <p>Công ty TNHH ABC, thành lập 2016 là một đơn vị luôn đi tiên phong trong việc đầu tư và cung cấp các giải pháp về giáo dục.</p>
+            </div>
+            <div class="footer-center">
+                <ul>
+                    <li><a href="#"><img src="images/icons/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/icons/google-plus.png" alt="google-plus"></a></li>
+                    <li><a href="#"><img src="images/icons/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/icons/instagram.png" alt="instagram"></a></li>
+                </ul>
+                <span>Bản quyền thuộc ABC 2016</span>
+            </div>
+            <ul class="footer-right">
+                <li><a href="#">Trung tâm hỗ trợ</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

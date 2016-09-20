@@ -80,6 +80,103 @@
 			}	
 		}
 	}
+
+	// Page paypal
+	.content-left {
+		display: block;
+		overflow: hidden;
+		padding-right: 0;
+		width: 100%;
+		.text-form-section {
+			.sub-text {
+				bottom: 0;
+				position: absolute;
+				text-align: justify;
+				top: auto;
+				transform: none;
+			}
+		}
+		.form-section.text-form-section {
+			background-position: top center;
+			height: 210px;
+			margin: 20px 0;
+			padding-left: 0;
+			width: 100%;
+		}
+		.form-section {
+			padding: 20px 0;
+			width: 100%;
+		}
+		.section-header {
+			margin: 0 0 5px;
+			position: relative;
+			width: 100%;
+		}
+		.payment-view {
+			width: 100%;
+			.sub-input {
+				margin: 0;
+				width: 49%;
+			}
+		}
+		.subject-view {
+			width: 100%;
+			.sub-input {
+				margin-left: 0;
+				width: 49%;
+				&:nth-child(3) {
+					margin-top: 20px;
+				}
+				&:last-child {
+					margin-top: 20px;
+				}
+			}
+		}
+		.core-subject.active {
+			bottom: -118px;
+		}
+		.text-view {
+			text-indent: 0;
+		}
+		.name-view , .email-view {
+			width: 100%;
+			.sub-input {
+				width: 100%;
+			}
+		}
+		.number-view {
+			width: 100%;
+			&:after {
+				content: none;
+			}
+			.sub-input {
+				width: 100%;
+			}
+		}
+		.exp-view {
+			margin: 5px 0 10px;
+		}
+		.exp-view, .code-view {
+			width: 100%;
+			.label-tt {
+				padding-left: 0;
+				width: 115px;
+			}
+		}
+		#cc-code {
+			width: 145px;
+		}
+		.small-tos {
+			margin-left: 0;
+		}
+	}
+	.aside-right {
+		display: block;
+		margin-top: 30px;
+		overflow: hidden;
+		padding-top: 0;
+		width: 100%;
+	}
 }
 
 @include max(639px) {
@@ -151,6 +248,7 @@
 			}
 		}
 	}
+
 }
 
 @include max(479px) {
@@ -192,5 +290,124 @@
 	}
 	.main-content-inner.english .block-menu {
 		margin-bottom: 30px;
+	}
+
+	// Page paypal
+	.content-left {
+		display: block;
+		overflow: hidden;
+		padding-right: 0;
+		width: 100%;
+		.text-form-section {
+			.sub-text {
+				bottom: 0;
+				position: absolute;
+				text-align: justify;
+				top: auto;
+				transform: none;
+			}
+		}
+		.form-section.text-form-section {
+			background-position: top center;
+			height: 230px;
+			margin: 20px 0;
+			padding-left: 0;
+			width: 100%;
+		}
+		.form-section {
+			padding: 20px 0;
+			width: 100%;
+		}
+		.section-header {
+			margin: 0 0 5px;
+			position: relative;
+			width: 100%;
+		}
+		.payment-view {
+			width: 100%;
+			.sub-input {
+				margin: 0;
+				width: 49%;
+			}
+		}
+		.subject-view {
+			width: 100%;
+			.sub-input {
+				margin-left: 0;
+				width: 49%;
+				&:nth-child(3) {
+					margin-top: 20px;
+				}
+				&:last-child {
+					margin-top: 20px;
+				}
+			}
+		}
+		.core-subject.active {
+			bottom: -118px;
+		}
+		.text-view {
+			text-indent: 0;
+		}
+		.name-view , .email-view {
+			width: 100%;
+			.sub-input {
+				width: 100%;
+			}
+		}
+		.number-view {
+			width: 100%;
+			&:after {
+				content: none;
+			}
+			.sub-input {
+				width: 100%;
+			}
+		}
+		.exp-view {
+			margin: 5px 0 10px;
+		}
+		.exp-view, .code-view {
+			width: 100%;
+			.label-tt {
+				padding-left: 0;
+				width: 115px;
+			}
+		}
+		#cc-code {
+			width: 145px;
+		}
+		.small-tos {
+			margin-left: 0;
+		}
+	}
+	.aside-right {
+		display: block;
+		margin-top: 30px;
+		overflow: hidden;
+		padding-top: 0;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.content-left {
+		display: block;
+		overflow: hidden;
+		padding-right: 0;
+		width: 100%;
+	}
+	.aside-right {
+		display: block;
+		margin-top: 30px;
+		overflow: hidden;
+		padding-top: 0;
+		width: 100%;
+		.summary-section {
+			text-align: center;
+		}
+		.testimonial-text {
+			text-align: left;
+		}
 	}
 }
