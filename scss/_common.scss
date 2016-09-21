@@ -401,11 +401,10 @@ a {
     }
     .sign-in-option-content {
       position: relative;
+      padding: 0 100px;
       .or {
-        position: absolute;
-        top: 35px;
-        left: 50%;
-        margin-left: -15px;
+        display: inline-block;
+        margin-top: 35px;
       }
     }
     .user-option,
@@ -417,10 +416,10 @@ a {
       }
     }
     .user-option {
-      margin-right: 45px;
+      float: left;
     }
     .parent-option {
-      margin-left: 45px;
+      float: right;
     }
   }
 }
