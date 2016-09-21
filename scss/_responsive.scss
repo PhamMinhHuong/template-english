@@ -233,18 +233,18 @@
 		&.sign-in-option {
 			padding-left: 15px;
 			padding-right: 15px;
+			.sign-in-option-content {
+				padding: 0 50px;
+			}
 			h2 {
 				font-size: 20px;
 				margin-bottom: 30px;
 			}
-			.sign-in-option-content .or {
-				display: none;
-			}
 			.user-option {
-				margin-right: 20px
+				margin-right: 0
 			}
 			.parent-option {
-				margin-left: 20px;
+				margin-left: 0;
 			}
 		}
 	}
@@ -387,6 +387,16 @@
 		overflow: hidden;
 		padding-top: 0;
 		width: 100%;
+	}
+	.fg-modal {
+		&.sign-in-option {
+			.sign-in-option-content {
+				padding: 0 20px;
+				.or {
+					display: none;
+				}
+			}
+		}
 	}
 }
 
