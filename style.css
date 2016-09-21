@@ -22,7 +22,8 @@
   background-color: #00728d;
 }
 
-.button.to-sign-up, .button.sign-up {
+.button.to-sign-up,
+.button.sign-up {
   background-color: #3b9b48;
 }
 
@@ -53,7 +54,8 @@
   padding-left: 20px;
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "";
   display: table;
 }
@@ -83,7 +85,8 @@ a {
   color: #555;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   outline: none;
 }
@@ -145,7 +148,8 @@ a:hover, a:focus {
   margin-bottom: 5px;
 }
 
-.area-language li a:before, .area-language li a:after {
+.area-language li a:before,
+.area-language li a:after {
   content: "";
   display: table;
 }
@@ -171,7 +175,8 @@ a:hover, a:focus {
   padding: 5px 0;
 }
 
-.nav-wrapper:before, .nav-wrapper:after {
+.nav-wrapper:before,
+.nav-wrapper:after {
   content: "";
   display: table;
 }
@@ -375,7 +380,8 @@ a:hover, a:focus {
   display: block;
 }
 
-.area-user .user-nav ul li a:before, .area-user .user-nav ul li a:after {
+.area-user .user-nav ul li a:before,
+.area-user .user-nav ul li a:after {
   content: "";
   display: table;
 }
@@ -594,7 +600,8 @@ a:hover, a:focus {
   margin-bottom: 5px;
 }
 
-.result-info ul li:before, .result-info ul li:after {
+.result-info ul li:before,
+.result-info ul li:after {
   content: "";
   display: table;
 }
@@ -628,7 +635,8 @@ a:hover, a:focus {
   margin-right: -30px;
 }
 
-.area-class .fg-row:before, .area-class .fg-row:after {
+.area-class .fg-row:before,
+.area-class .fg-row:after {
   content: "";
   display: table;
 }
@@ -755,7 +763,8 @@ a:hover, a:focus {
   margin-bottom: 5px;
 }
 
-.block-class ul li:before, .block-class ul li:after {
+.block-class ul li:before,
+.block-class ul li:after {
   content: "";
   display: table;
 }
@@ -795,7 +804,8 @@ a:hover, a:focus {
   text-align: left;
 }
 
-.area-update-info .area-inner form .input-wrapper:before, .area-update-info .area-inner form .input-wrapper:after {
+.area-update-info .area-inner form .input-wrapper:before,
+.area-update-info .area-inner form .input-wrapper:after {
   content: "";
   display: table;
 }
@@ -957,7 +967,8 @@ a:hover, a:focus {
   margin-bottom: 5px;
 }
 
-.main-content-inner.search-result .result-info ul li:before, .main-content-inner.search-result .result-info ul li:after {
+.main-content-inner.search-result .result-info ul li:before,
+.main-content-inner.search-result .result-info ul li:after {
   content: "";
   display: table;
 }
@@ -2115,3 +2126,5 @@ a:hover, a:focus {
     text-align: left;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
