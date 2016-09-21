@@ -534,13 +534,12 @@ a:focus {
 
 .fg-modal.sign-in-option .sign-in-option-content {
   position: relative;
+  padding: 0 100px;
 }
 
 .fg-modal.sign-in-option .sign-in-option-content .or {
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  margin-left: -15px;
+  display: inline-block;
+  margin-top: 35px;
 }
 
 .fg-modal.sign-in-option .user-option,
@@ -555,11 +554,11 @@ a:focus {
 }
 
 .fg-modal.sign-in-option .user-option {
-  margin-right: 45px;
+  float: left;
 }
 
 .fg-modal.sign-in-option .parent-option {
-  margin-left: 45px;
+  float: right;
 }
 
 .header-search {
@@ -1955,18 +1954,18 @@ a:focus {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .fg-modal.sign-in-option .sign-in-option-content {
+    padding: 0 50px;
+  }
   .fg-modal.sign-in-option h2 {
     font-size: 20px;
     margin-bottom: 30px;
   }
-  .fg-modal.sign-in-option .sign-in-option-content .or {
-    display: none;
-  }
   .fg-modal.sign-in-option .user-option {
-    margin-right: 20px;
+    margin-right: 0;
   }
   .fg-modal.sign-in-option .parent-option {
-    margin-left: 20px;
+    margin-left: 0;
   }
 }
 
@@ -2102,6 +2101,9 @@ a:focus {
     overflow: hidden;
     padding-top: 0;
     width: 100%;
+  }
+  .fg-modal.sign-in-option .sign-in-option-content .or {
+    display: none;
   }
 }
 
