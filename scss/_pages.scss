@@ -507,3 +507,462 @@
 		}
 	}
 }
+
+// Page Paypal
+.content-left, .aside-right {
+	display: table-cell;
+    vertical-align: top;
+}
+.content-left {
+	padding-right: 25px;
+	width: 750px;
+	.breadcrumb {
+		background-color: transparent;
+		border-radius: 0;
+		margin-bottom: 5px;
+		padding: 0;
+		.active {
+			color: #0ca1e0;
+		}
+	}
+	.title {
+		font-size: 24px;
+		color: #0ca1e0;
+		font-weight: bold;
+	}
+	.text-form-section {
+		background-image: url(images/img-smile.jpg);
+		background-repeat: no-repeat;
+		.sub-text {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	.form-section.text-form-section {
+		background-position: 0 50%;
+		height: 182px;
+		padding: 0 0 0 165px;
+		width: 725px;
+	}
+	.form-section {
+		padding: 2.2em 0 2.2em 145px;
+		position: relative;
+		width: 725px;
+	}
+	.form-section + .form-section {
+		border-top: 1px solid #0ca1e0;
+	}
+	.section-header {
+		color: #0ca1e0;
+		font-size: 16px;
+		left: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 124px;
+	}
+	.input-view {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.payment-view {
+		.sub-input {
+			height: 38px;
+			width: 140px;
+		}
+	}
+	.sub-input {
+		background-color: #f5f5f5;
+		border: 1px solid #d1d1d1;
+		border-radius: 5px;
+		color: #858585;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px;
+		margin: 0 0 0 10px;
+		outline: 0 none;
+		overflow: visible;
+		padding: 8px 16px;
+		position: relative;
+	}
+	button.sub-input {
+		&:hover, &:active {
+			background-color: #67d6ff;
+			border-color: #49ceff;
+			color: #fff;
+		}
+	}
+	.option-acitve {
+		background-color: #1ac1ff;
+		border-color: #0cb7f6;
+		color: #fff;
+	}
+	.yearly-input {
+		&:after {
+			background: url(images/icons/ic-best.png) repeat scroll 0 0 / 36px 31px;
+			content: "";
+			display: block;
+			height: 31px;
+			position: absolute;
+			right: -6px;
+			top: -12px;
+			width: 36px;
+		}
+	}
+	.number-picker {
+		border-radius: 5px;
+		display: inline-block;
+		padding-right: 15px;
+	}
+	.decrement, .increment {
+		background: #f5f5f5 none repeat scroll 0 0;
+		border: 1px solid #d1d1d1;
+		cursor: pointer;
+		display: inline-block;
+		height: 33px;
+		padding: 0;
+		vertical-align: middle;
+		width: 32px;
+	}
+	.decrement {
+		border-bottom-left-radius: 6px;
+		border-right: medium none;
+		border-top-left-radius: 6px;
+	}
+	.increment {
+		border-bottom-right-radius: 6px;
+		border-left: medium none;
+		border-top-right-radius: 6px;
+	}
+	.chevron {
+		background: url(images/icons/ic-next.png) no-repeat scroll 0 0;
+		height: 16px;
+		margin: 0 auto;
+		position: relative;
+		width: 16px;
+		&.left {
+			transform: rotate(180deg);
+		}
+	}
+	.decrement-disabled {
+		.chevron {
+			background: url(images/icons/ic-next-hover.png) no-repeat scroll 0 0;
+		}
+	}
+	.num-children {
+		border: 1px solid #d1d1d1;
+		border-radius: 0;
+		box-shadow: none;
+		display: inline-block;
+		font-size: 15px;
+		height: 33px;
+		line-height: 30px;
+		margin: 0;
+		padding: 0 20px;
+		box-sizing: border-box;
+    	vertical-align: middle;
+		width: auto;
+	}
+	.add-text {
+		display: inline-block;
+		font-size: 12px;
+		line-height: 30px;
+	}
+	.subject-view {
+		margin-bottom: 20px;
+		.sub-input {
+			height: 77px;
+			margin-left: 8px;
+			vertical-align: top;
+			width: 136px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		.option-active {
+			background-color: #1ac1ff;
+			border-color: #0cb7f6;
+			color: #fff;
+		}
+	}
+	.option-name {
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 3px;
+	}
+	.option-price {
+		font-size: 25px;
+		line-height: 32px;
+		font-weight: 400;
+	}
+	.currency-symbol {
+		font-size: 14px;
+		line-height: 22px;
+		vertical-align: top;
+	}
+	.option-term {
+		display: inline-block;
+		font-size: 11px;
+		text-align: left;
+	}
+	.core-subject.active{
+		bottom: -21px;
+		display: block;
+		height: 13px;
+		left: 50%;
+		outline: 0 none;
+		position: absolute;
+		transform: translateX(-50%);
+		width: 34px;
+		.core-subject-left {
+			border-color: transparent transparent #1ac1ff;
+			border-style: solid;
+			border-width: 0 0 13px 17px;
+			height: 0;
+			left: 0;
+			position: absolute;
+			width: 0;
+		}
+		.core-subject-right {
+			border-color: transparent transparent transparent #54d1ff;
+			border-style: solid;
+			border-width: 13px 0 0 17px;
+			height: 0;
+			position: absolute;
+			right: 0;
+			width: 0;
+		}
+	}
+	.product-view {
+		.product-section-header {
+			background-color: #1ac1ff;
+			border-radius: 4px 4px 0 0;
+			color: #fff;
+			font-size: 14px;
+			height: 20px;
+			line-height: 30px;
+		}
+	}
+	.product-description {
+		border-color: #1ac1ff;
+		border-image: none;
+		border-radius: 0 0 4px 4px;
+		border-style: solid;
+		border-width: 0 1px 1px;
+		padding-top: 7px;
+	}
+	.sub-product-des {
+		display: inline-block;
+		min-height: 105px;
+		opacity: 0.3;
+		text-align: center;
+		vertical-align: top;
+		width: 24%;
+		.product-icon {
+			background: rgba(0, 0, 0, 0) none no-repeat scroll 50% 50%;
+			height: 45px;
+			margin: 10px 0 4px;
+			width: 45px;
+		}
+		.product-name {
+			color: #00a1dd;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.product-grade {
+			font-size: 11px;
+		}
+	}
+	.pro-math {
+		background: url(images/icons/ic-math.png) no-repeat scroll 50% 0;
+		&.included {
+			opacity: 1;
+		}
+	}
+	.pro-language-arts {
+		background: url(images/icons/ic-book.png) no-repeat scroll 50% 0;
+	}
+	.pro-science {
+		background: url(images/icons/ic-science.png) no-repeat scroll 50% 0;
+	}
+	.pro-social {
+		background: url(images/icons/ic-social.png) no-repeat scroll 50% 0;
+	}
+	.text-view {
+		font-style: italic;
+		padding-top: 8px;
+		text-indent: 11px;
+	}
+	.label-tt {
+		display: inline-block;
+		font-size: 14px;
+		font-weight: normal;
+		width: 115px;
+	}
+	.name-view, .email-view {
+		.sub-input {
+			margin: 4px 0;
+			padding: 5px 7px;
+			width: 375px;
+		}
+	}
+	.number-view , .exp-view {
+		.label-tt {
+			width: 150px;
+		}
+	}
+	.number-view {
+		margin-bottom: 5px;
+		position: relative;
+		width: 490px;
+		&:after {
+			background: url(images/icons/ic-paypal.png) no-repeat scroll 0 center;
+			content: "";
+			height: 40px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 113px;
+		}
+		.sub-input {
+			margin: 4px 0;
+			padding: 5px 7px;
+			width: 215px;
+		}
+	}
+	.exp-view {
+		.sub-input {
+			margin: 0;
+			padding: 5px 4px;
+			width: 55px;
+		}
+		.exp-divider {
+			display: inline-block;
+			text-align: center;
+			width: 25px;
+		}
+	}
+	.code-view {
+		.label-tt {
+			padding-left: 15px;
+			width: 135px;
+		}
+	}
+	.code-help {
+		background: url(images/icons/ic-help.png) repeat scroll 0 0;
+		display: inline-block;
+		height: 14px;
+		width: 14px;
+	}
+	#cc-code {
+		margin: 0;
+		padding: 5px 7px;
+		width: 70px;
+	}
+	.small-tos {
+		float: left;
+		font-size: 11px;
+		margin-left: 145px;
+		a {
+			color: #00659e;
+			text-decoration: underline;
+		}
+	}
+	.submit-button {
+		background-color: #1ac1ff;
+		border: medium none transparent;
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 15px;
+		float: right;
+		margin-top: 10px;
+		line-height: normal;
+		min-width: 135px;
+		padding: 0.46em 1.5em 0.54em;
+		text-align: center;
+		text-decoration: none;
+		transition: box-shadow 0.1s linear 0s;
+		vertical-align: baseline;
+		white-space: nowrap;
+		&:hover {
+			background-color: #67d6ff;
+		}
+	}
+	.secure-server {
+		background: url(images/icons/ic-key.png) no-repeat scroll center 0;
+		clear: right;
+		color: #bfbfbf;
+		float: right;
+		font-size: 12px;
+		font-weight: 700;
+		height: 20px;
+		line-height: 20px;
+		margin-top: 5px;
+		padding: 0 13px 0 11px;
+		width: 135px;
+	}
+	.secure-text {
+		float: left;
+	}
+	.server-text {
+		float: right;
+	}
+}
+.aside-right {
+	background-color: #efefef;
+	padding: 40px 0;
+	text-align: center;
+	width: 274px;
+	.aside-section {
+		margin-top: 50px;
+		padding-top: 40px;
+		li {
+			line-height: 20px;
+			a {
+				color: #00659e;
+				text-decoration: underline;
+			}
+		}
+	}
+	.summary-section {
+		background: url(images/icons/ic-saying.png) no-repeat scroll 50% 0;
+		font-size: 12px;
+		margin-left: 25px;
+		margin-right: 25px;
+		text-align: left;
+	}
+	.benefits-section {
+		background: url(images/icons/ic-join.png) no-repeat scroll 50% 0;
+	}
+	.contact-section {
+		background: url(images/icons/ic-phone.png) no-repeat scroll 50% 0;
+	}
+	h3 {
+		color: #0ca1e0;
+		font-size: 20px;
+		line-height: 1em;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+	.testimonial-text {
+		line-height: 18px;
+		margin-bottom: 10px;
+	}
+	.name-address {
+		font-style: italic;
+		text-align: right;
+	}
+	.testimonial-img {
+		background: url(images/img-parent.jpg) no-repeat scroll 0 0;
+		height: 131px;
+		margin: 10px auto 0;
+		width: 188px;
+	}
+}
