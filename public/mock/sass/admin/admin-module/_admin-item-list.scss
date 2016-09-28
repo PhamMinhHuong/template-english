@@ -1,0 +1,40 @@
+.admin-item-list {
+  .item {
+    padding: 15px;
+    @include clearfix;
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+  }
+
+  .lawyer-info {
+    width: 70%;
+    padding-right: 10px;
+    .thumb {
+      margin: 0 15px 0 0;
+      width: 66px;
+      text-align: center;
+    }
+    dl {
+      margin: 0;
+      overflow: hidden;
+    }
+    dt {
+      float: left;
+      width: 80px;
+    }
+    dd {
+      float: left;
+      width: calc( 50% - 80px );
+      padding-right: 10px;
+      &:before {
+        content: ":";
+        margin: 0 5px 0 0;
+      }
+    }
+  }
+
+  .buttons-group {
+    width: 30%;
+  }
+}

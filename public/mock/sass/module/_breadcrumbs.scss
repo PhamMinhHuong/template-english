@@ -1,0 +1,13 @@
+/* Breadcrumbs */
+#breadcrumbs {
+  font-size: $base_font_size - 2;
+  li {
+    line-height: $base_line_height + 13;
+    a {
+      color: $purple;
+    }
+  }
+  .separate {
+    padding: 0 10px;
+  }
+}

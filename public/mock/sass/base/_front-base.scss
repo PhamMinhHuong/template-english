@@ -1,0 +1,13 @@
+/* Base of front page */
+a {
+  color: $link;
+}
+
+input[type="text"], input[type="tel"], input[type="password"],
+input[type="email"] {
+  height: 28px;
+  background-color: $input_bg;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+}

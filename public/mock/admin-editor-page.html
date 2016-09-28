@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  <title>Legal</title>
+  <!-- Load Style -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="./css/common-admin.css">
+</head>
+<!-- /Head -->
+
+<!-- Body -->
+<body class="admin-page">
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header id="header" class="admin-header">
+      <div class="admin-logo pull-left">
+        <a href="#homepage"><img src="./images/admin-logo.png" alt="Legal"/></a>
+      </div>
+      <div class="admin-top-menu pull-left">
+        <ul class="admin-user-box pull-right">
+          <li><a href="#" class="link-to-user">こんにちは ○○さん</a></li>
+          <li><a href="#" class="btn-sign-out"><i class="fa fa-sign-out"></i>ログアウト</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Content primary -->
+    <div class="admin-content">
+
+      <!-- Sidebar Primary -->
+      <div class="sidebar-section">
+        <nav class="navbar admin-navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">メニュー</a></li>
+            <li><a href="#">Q＆Ａ管理</a></li>
+            <li><a href="#">弁護士コラム管理</a></li>
+            <li><a href="#">弁護士ポイント管理</a></li>
+            <li><a href="#">法律事務所管理</a></li>
+            <li><a href="#">一般ユーザー管理</a></li>
+            <li><a href="#">ページ編集</a></li>
+            <li><a href="#">編集部コラム管理</a></li>
+            <li><a href="#">サイトお知らせ管理</a></li>
+            <li><a href="#">弁護士課金管理</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /Sidebar Primary -->
+      
+      <!-- admin-page-content-wrapper -->
+      <div class="admin-page-content-wrapper is-fluid-width">
+
+        <!-- admin-page-content -->
+        <div class="admin-page-content">
+          <h3 class="admin-page-title">LF管理者ページ – 編集部コラム　作成</h3>
+          
+          <!-- admin-editor -->
+          <div class="admin-editor">
+            <form action="#" class="admin-form">
+              <div class="row row-10">
+                <div class="col-sm-9">
+                  <div class="form-group">
+                    <input type="text" placeholder="Subject" class="form-control title">
+                  </div>
+
+                  <!-- ck editor  -->
+                    <div class="form-group">
+                      <!-- remove this textarea when using ck editor -->
+                      <textarea name="" id="" rows="15" class="form-control is-fluid-width"></textarea>
+                    </div>
+                  <!-- /ck editor -->
+                </div>
+                <div class="col-sm-3">
+                  <div class="admin-editor-control">
+                    <div class="form-group">
+                      <select class="form-control is-fluid-width">
+                        <option value="公開">公開</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    
+                    <div class="admin-post-info">
+                      <div class="form-group">
+                        <a href="#" class="btn btn-sm btn-default btn-save-draff">下書きとして保存</a>
+                        <a href="#" class="btn btn-sm btn-default btn-info pull-right">プレビュー</a>
+                      </div>
+
+                      <dl>
+                        <dt class="pull-left"><i class="fa fa-key"></i>ステータス</dt>
+                        <dd>下書き<a href="#" class="btn-edit">編集</a></dd>
+                        <dt class="pull-left"><i class="fa fa-eye"></i>公開状態</dt>
+                        <dd>公開<a href="#" class="btn-edit">編集</a></dd>
+                        <dt class="pull-left"><i class="fa fa-calendar"></i>すぐにする</dt>
+                        <dd><input type="text" class="datepicker"></dd>
+                      </dl>
+                    </div>
+
+                    <div class="buttons-group">
+                      <button class="btn btn-default btn-remove">ゴミ箱へ移動</button>
+                      <button class="btn btn-submit pull-right">公開</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- /admin-editor -->    
+        </div>
+        <!-- /admin-page-content -->
+
+        <!-- admin-footer -->
+        <footer class="admin-footer">
+          <div class="container">
+            <!-- Todo footer -->
+            <p class="copyright">
+              ©2016 LEGAL FRONTIER 21 Co., Ltd. All Rights Reserved.
+            </p>
+          </div>
+        </footer>
+        <!-- /admin-footer -->
+
+      </div>
+      <!-- /admin-page-content-wrapper -->
+
+    </div>
+    <!-- /Content primary -->
+  
+  </div>
+  <!-- Page Wrapper -->
+
+</body>
+<!-- /Body -->
+
+<!-- Load Js -->
+<script type="text/javascript" src="./vendor/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="./vendor/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script src="js/function.js"></script>
+
+</html>

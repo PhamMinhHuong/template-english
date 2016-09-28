@@ -1,0 +1,68 @@
+.admin-page-title {
+  font-family: $default-font-bold;
+  color: $admin-page-title;
+  font-size: $base_font_size + 4;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $input_bg;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-size: $base_font_size;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  &:focus, &:hover, &:active {
+    outline: 0;
+    @include css3-compatible(opacity, 0.7);
+  }
+  &.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
+
+.btn-submit {
+  color: $white;
+  background-color: $accent;
+  border: 1px solid $accent;
+  &:focus, &:hover, &:active {
+    color: $white;
+  }
+}
+
+.btn-info {
+  color: $accent;
+  border: 1px solid $accent;
+  background: none;
+  &:focus, &:hover, &:active {
+    background: none;
+    color: $accent;
+    border: 1px solid $accent;
+  }
+}
+
+.pagination {
+  >li {
+    &.active {
+      >a, >span {
+        border-color: $accent;
+        background: $accent;
+        &:hover {
+          border-color: $accent;
+          background: $accent;
+        }
+      }
+    }
+    >a {
+      color: $accent;
+      &:hover, &:focus, &:active {
+        color: $white;
+        background: $accent;
+        border-color: $accent;
+      }
+    }
+  }
+}

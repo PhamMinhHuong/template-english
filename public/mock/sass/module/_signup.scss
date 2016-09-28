@@ -1,0 +1,292 @@
+
+
+/*** sign-up ***/
+
+.control-input {
+  margin-bottom: 20px;
+  label {
+    width: 110px;
+    float: left;
+    margin-right: 20px;
+    line-height: 40px;
+  }
+  .input-group-medium {
+    width: calc(100% - 130px);
+    float: left;
+    font-size: $base_font_size - 1;
+    font-family: $default-font-medium;
+    color: $title_bg;
+    input {
+      height: 40px;
+      border-radius: 18px;
+      &:focus {
+        border: 2px solid $accent;
+        outline: none;
+        box-shadow: none;
+        background: $white;
+      }
+    }
+  }
+  p {
+    font-size: $base_font_size - 3;
+    font-family: $default-font-demi;
+    color: $link;
+    margin-bottom: 0;
+    margin-top: 3px;
+  }
+}
+.sign-up {
+  .control-checkbox .control-action p {
+    text-align: center;
+    float: none;
+    width: inherit;
+    font-size: $base_font_size - 1;
+  }
+  .control-group {
+    border: none;
+  }
+  h3 span {
+    font-family: $default-font-bold;
+  }
+}
+.login-bottom {
+  padding: 0 10px;
+  a {
+    width: 100%;
+    display: block;
+  }
+  .forgot-password {
+    color: $purple;
+    margin: 20px 0 30px;
+    font-size: $base_font_size - 3;
+  }
+  .login {
+    padding: 3px 0;
+  }
+}
+.login-facebook {
+  background: $bg-face;
+  margin-bottom: 10px;
+  color: $white;
+  font-family: $default-font-medium;
+  font-size: $base_font_size;
+  padding: 3px 0;
+  border-radius: 3px;
+  line-height: 38px;
+  i {
+    margin-right: 15px;
+    font-size: $base_font_size + 10;
+  }
+  &:hover {
+    opacity: 0.7;
+    color: $white;
+  }
+}
+.member-registration {
+  font-size: $base_font_size;
+  font-family: $default-font-medium;
+  color: $link;
+  .login-facebook {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: block;
+    padding: 3px 0;
+  }
+}
+.line-or {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  &:before, &:after {
+    width: calc(50% - 25px);
+    height: 1px;
+    background: $input_bg;
+    position: absolute;
+    content: "";
+    top: 12px;
+  }
+  &:before {
+    right: 0;
+  }
+  &:after {
+    left: 0;
+  }
+}
+.register {
+  margin-top: 30px;
+  padding: 0 20px 20px;
+  border-bottom: 1px solid $input_bg;
+}
+.check-handling {
+  margin-top: 25px;
+  font-size: $base_font_size - 1;
+  font-family: $default-font-regular;
+  p {
+    text-align: center;
+  }
+  .check {
+    color: $purple;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bfb7d5;
+  }
+  .btn-confirmation {
+    max-width: 360px;
+    width: 100%;
+    padding: 3px 0;
+  }
+}
+/*** signup-comfirm ***/
+.signup-confirm {
+  padding: 5px 0;
+  dl {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+  }
+  dd, dt {
+    padding: 15px 20px;
+    text-align: left;
+  }
+  dt {
+    width: 140px;
+    float: left;
+    font-size: $base_font_size - 1;
+    font-family: $default-font-medium;
+  }
+  dd {
+    width: calc(100% - 140px);
+    float: left;
+    font-size: $base_font_size - 2;
+  }
+}
+.buttons-group {
+  clear: both;
+  max-width: 455px;
+  margin: 33px auto 12px;
+  width: 100%;
+}
+.btn-edit, .btn-submit {
+  max-width: 213px;
+  width: 100%;
+  &:hover {
+    color: $white;
+    opacity: 0.7;
+  }
+}
+.btn-edit {
+  background: $light-black;
+  color: $white;
+  font-family: $default-font-medium;
+  padding: 12px 0;
+  border-radius: 4px;
+}
+.btn-submit {
+  padding: 3px 0;
+}
+/*** signup-lawer ***/
+.registration-procedure {
+  background: $light-yellow;
+  border-radius: 4px;
+  padding: 10px 25px 24px;
+  margin-bottom: 20px;
+  .title {
+    font-family: $default-font-medium;
+    color: $nav_item_hover_bg;
+  }
+}
+.step-info {
+  color: $gray;
+  width: 100%;
+  margin-top: 20px;
+  .step-register {
+    float: left;
+    max-width: 165px;
+    width: 100%;
+    padding: 12px 5px;
+    height: 165px;
+    border-radius: 3px;
+    font-size: $base_font_size - 2;
+    span {
+      display: block;
+    }
+    i {
+      margin-bottom: 5px;
+      height: 48px;
+    }
+    .title-step {
+      font-family: $default-font-bold;
+      margin-bottom: 15px;
+      height: 17px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .step-laptop{
+      font-size: $base_font_size + 34;
+    }
+    .step-fax {
+      font-size: $base_font_size + 24;
+    }
+    .step-edit {
+      font-size: $base_font_size + 31;
+    }
+  }
+  .next-resgister {
+    margin: 0 12px;
+    line-height: 165px;
+    vertical-align: middle;
+    float: left;
+    i {
+      font-size: $base_font_size + 4;
+    }
+  }
+}
+.all-field {
+  font-size: $base_font_size - 3;
+  font-family: $default-font-regular;
+  .required {
+    color: $accent;
+  }
+}
+/*** sign-up finish ***/
+.signup-finish {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size:  $base_font_size - 2;
+  p {
+    font-family: $default-font-medium;
+    color: $light-black;
+  }
+  .requied-finish {
+    font-family: $default-font-regular;
+    color: $gray;
+    margin-bottom: 36px;
+  } 
+}
+.back-home {
+  color: $purple;
+}
+/*** office-confirm  */
+.office-confirm {
+  dd, dt {
+    font-size: $base_font_size - 1;
+  }
+}
+/*** contactus-comfirm ***/
+.contactus-comfirm {
+  dl {
+    max-width: 100%;
+  }
+  dd, dt {
+    font-size: $base_font_size;
+  }
+  dt {
+    width: 160px;
+    font-family: $default-font-bold;
+  }
+  dd {
+    width: calc(100% - 160px);
+  }
+}

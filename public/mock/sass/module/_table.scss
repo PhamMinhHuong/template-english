@@ -1,0 +1,83 @@
+.table-point {
+  border: 1px solid $input_bg;
+  td {
+    font-size: $base_font_size - 1;
+    padding: 10px 15px;
+    vertical-align: middle;
+    border: 1px solid $input_bg;
+    span {
+      color: $accent;
+      font-family: $default-font-bold;
+      margin-left: 8px;
+    }
+  }
+  .many-point {
+    padding: 0;
+  }
+}
+/*** lawer-plan **/
+.lawer-plan-info {
+  border: 1px solid $input_bg;
+  margin-top: 10px;
+  thead {
+    background: $input_bg;
+  }
+  tr {
+    border: 1px solid $input_bg;
+  }
+  th, td {
+    padding: 20px;
+    font-size: $base_font_size - 1;
+    vertical-align: top;
+    &:first-child {
+      width: 40px;
+      padding-right: 0;
+    }
+  }
+  th {
+    color: $accent;
+    font-family: $default-font-medium;
+    padding: 11px 20px;
+  }
+}
+/*** contact-detail ***/
+.contact-detail-info {
+  th, td {
+    font-size: $base_font_size - 1;
+    color: $link;
+    padding: 15px;
+  }
+  th {
+    font-family: $default-font-medium;
+    width: 130px;
+  }
+  td {
+    a {
+      color: $medium-blue;
+    }
+  }
+}
+/*** column-list-thema ***/
+.table-qa-list {
+  .description {
+    width: 415px;
+  }
+  .title-content {
+    width: 190px;
+  }
+  .imparting {
+    width: 85px;
+  }
+  .category {
+    width: 205px;
+  }
+  .title {
+    width: 370px;
+  }
+  .status {
+    width: 125px;
+  }
+  .button-edit, .button-post {
+    padding-right: 24px;
+  }
+}

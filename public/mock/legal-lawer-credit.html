@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  <title>Legal</title>
+  <!-- Load Style -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/jquery-selectbox/jquery.selectBox.css">
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <!-- Logo Header -->
+        <div class="col-sm-5 col-md-5">
+          <div id="logo">
+            <h1 class="logo"><a href="#"><img src="images/logo1.png" alt="Legal"/></a><span>弁護士様向けマイページ</span>
+            </h1>
+          </div>
+        </div>
+        <!-- Header Right -->
+        <div class="col-sm-7 col-md-7">
+          <div class="header-right clearfix">
+            <div class="pull-right">
+              <div class="visit">
+                <span>ログイン：トビウオさん</span>
+                <a href="#" class="logout">ログアウト</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+  <!-- Banner -->
+  <div class="banner banner-sign-up sign-up-lawer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 box-construction">
+          <h2>弁護士様向けマイページ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Banner -->
+  <!-- Content primary -->
+  <div id="content" class="site-content legal-lawer-plan">
+    <div class="container">
+      <div class="content-area">
+        <div class="row">
+          <!-- Sidebar Primary (3 columns follow boostrap framework) -->
+          <div class="col-sm-3 col-md-3">
+            <div class="sidebar-area">
+              <!-- Sidebar section #1 (弁護士検索) -->
+              <div class="sidebar-section">
+                <div class="sidebar-content bg-white clearfix">
+                  <div class="module-section al-center">
+                    <p>会員プランを選択してください。<br>後ほど弁護士様のマイページからも変更可能です。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Primary (9 columns follow boostrap framework) -->
+          <div class="col-sm-9 col-md-9">
+            <div class="section-title al-center">
+              <h3><span>お支払い方法</span></h3>
+            </div>
+            <div class="content-section bg-white padding-around">
+              <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                  <div class="control-group control-table control-radio clearfix mb0 pb0 border-none legal-credit">
+                    <span class="credit-control">
+                      <input class="radio" type="radio" name="radio1" value="一般所属者" id="radio1">
+                      <label for="radio1">銀行口座自動振替</label>
+                    </span>
+                    <div class="legal-credit-info">
+                      <p>お客さまに銀行口座振替用紙を記入、郵送いただき、自動引落としができます。<br>
+                      初回2か月分のお支払いのみ銀行振込でお願いします。</p>
+                      <div class="upload btn-upload-credit">
+                        <span>
+                        <i class="fa fa-upload" aria-hidden="true"></i>口座自動振替申込書（PDF）</span>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="line-credit">
+              </div>
+              <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                  <div class="control-group control-table control-radio clearfix mb0 pb0 border-none legal-credit">
+                    <span class="credit-control">
+                      <input class="radio" type="radio" name="radio2" value="一般所属者" id="radio2" checked="">
+                      <label for="radio2">クレジットカード</label>
+                    </span>
+                    <div class="col-md-8 col-md-offset-1 pl0 pr0">
+                      <form class="member-login">
+                        <div class="card-number control-input clearfix">
+                          <label class="mr0">カード番号</label>
+                          <div class="input-group-medium">
+                            <input class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="control-input clearfix">
+                          <label class="mr0" for="selectbox1">有効期限</label>
+                          <div class="btn-select pull-left">
+                            <div class="form-field">
+                              <select id="selectbox1" class="select-box">
+                                <option>月</option>
+                                <option>離婚・男女トラブル</option>
+                                <option>離婚・男女トラブル</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="btn-select pull-right">
+                            <div class="form-field">
+                              <select id="selectbox2" class="select-box">
+                                <option>年</option>
+                                <option>離婚・男女トラブル</option>
+                                <option>離婚・男女トラブル</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-name control-input clearfix">
+                          <label class="mr0">カード名義</label>
+                          <div class="input-group-medium">
+                            <input class="form-control" placeholder="例 ) TARO YAMADA"type="text">
+                          </div>
+                        </div>
+                        <div class="security-code control-input clearfix">
+                          <label class="mr0">セキュリティコード</label>
+                          <div class="input-group-medium">
+                            <input class="form-control" placeholder="例 ) 123" type="text">
+                          </div>
+                        </div>
+                        <div class="al-center credit-register clearfix">
+                          <a class="lg-button-special lg-button" href="#">登録する
+                          </a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Content primary -->
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <!-- Todo footer -->
+      <div class="row footer-primary">
+        <p class="copyright col-md-5">
+          ©2016 LEGAL FRONTIER 21 Co., Ltd. All Rights Reserved.
+        </p>
+        <ul class="col-md-7 text-right">
+          <li><a class="faq" href="#">よくあるお問い合わせ</a></li>
+          <li><a class="company" href="#">サイトマップ</a></li>
+          <li><a class="privacy" href="#">プライバシーポリシー</a></li>
+          <li><a class="inquiry" href="#">運営会社</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+<!-- /Body -->
+<!-- Load Js -->
+<script type="text/javascript" src="./vendor/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="./vendor/jquery-selectbox/jquery.selectBox.js"></script>
+<script src="js/function.js"></script>
+</html>

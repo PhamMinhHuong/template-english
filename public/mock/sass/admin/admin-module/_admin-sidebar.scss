@@ -1,0 +1,35 @@
+.sidebar-section {
+  position: absolute;
+  width: $admin-sidebar-width;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $bg-admin-sidebar;
+}
+
+.navbar.admin-navbar {
+  border: 0;
+  .nav.navbar-nav {
+    float: none;
+    margin: 0;
+    >li {
+      float: none;
+      &:not(:first-child) {
+        border-top: 1px solid $admin-border-color;
+      }
+      &:hover, &.active {
+        >a {
+          background-color: $bg-admin-sidebar-hover;
+        }
+      }
+      >a {
+        color: $light-gray;
+        padding: 10px 20px;
+        display: block;
+        font-size: $base_font_size;
+        font-family: $default-font-regular;
+        background-color: $bg-admin-sidebar;
+      }
+    }
+  }
+}

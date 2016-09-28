@@ -1,0 +1,39 @@
+.admin-header {
+  background: $bg-admin-header;
+  height: $admin-header-height;
+  .admin-logo {
+    padding: 12px 15px;
+    display: inline-block;
+    width: $admin-sidebar-width;
+    img {
+      max-width: 100px;
+    }
+  }
+  
+  .admin-top-menu {
+    width: calc( 100% - #{$admin-sidebar-width} );
+    @include clearfix;
+  }
+
+  .admin-user-box {
+    padding: 0;
+    list-style: none;
+    @include clearfix;
+    li {
+      float: left;
+      &:hover {
+        a {
+          background: #393939;
+        }
+      }
+    }
+    a {
+      color: $light-gray;
+      padding: 15px;
+      display: block;
+    }
+    i {
+      margin: 0 5px 0 0;
+    }
+  }
+}

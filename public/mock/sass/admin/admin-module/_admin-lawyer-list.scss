@@ -1,0 +1,14 @@
+.admin-lawyer-filter {
+  margin: 0 0 40px;
+  @include clearfix;
+
+  .admin-form {
+    select {
+      width: 320px;
+    }
+  }
+
+  .free-word {
+    width: 260px;
+  }
+}

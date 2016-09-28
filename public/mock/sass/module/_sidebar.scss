@@ -1,0 +1,247 @@
+@import "../base/variables", "../base/mixins";
+
+/* Sidebar */
+/* Todo style for sidebar */
+.sidebar-section {
+  margin-bottom: 25px;
+  .sidebar-content {
+    padding: 16px 18px;
+  }
+  .module-title {
+    margin: 0 7px 20px;
+  }
+  .lg-button {
+    margin: 14px 0 4px;
+  }
+  .sidebar-list-item {
+    margin: 0 -19px 17px;
+    padding: 0 19px 14px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .profile-module {
+    .profile-bottom {
+      p {
+        line-height: 1.7;
+        margin-bottom: 0;
+        padding: 4px 0 0;
+      }
+    }
+  }
+}
+
+.sidebar-area {
+  /*** google analytic ***/
+  .google-analytics {
+    img {
+      width: 100%;
+      height: auto;
+      background-size: cover;
+    }
+  }
+  /*** category-blog ***/
+  .title-category {
+    background: $nav_item_hover_bg;
+    padding: 11px 0;
+    h3 {
+      text-align: center;
+      position: relative;
+      color: $white;
+      font-size: $base_font_size;
+      font-family: $default-font-bold;
+      margin: 0;
+      &:before {
+        background: url("../images/icon-category.png");
+        content: "";
+        width: 20px;
+        height: 18px;
+        left: 25px;
+        position: absolute;
+      }
+    }
+  }
+  .box-link {
+    padding: 0px 10px 0px 5px;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        a {
+          font-size: $base_font_size - 1;
+          color: $title_bg;
+          font-family: $default-font-medium;
+          line-height: 1.9;
+          i {
+            color: $accent;
+            font-size: $base_font_size;
+            padding-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.item-info {
+  img {
+    width: 100%;
+  }
+  a {
+    color: $purple;
+    font-size: $base_font_size;
+    display: block;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: $default-font-bold;
+  }
+  span {
+    padding: 0 10px;
+    font-size: $base_font_size - 3;
+    font-family: $default-font-regular;
+  }
+  .blog-note {
+    color: $light-orange;
+    padding-left: 0;
+  }
+  .enterprise {
+    color: $dignity-blue;
+    padding-left: 0;
+  }
+  .blog-date {
+    color: $gray;
+    border-left: 1px solid $input_bg;
+  }
+  .blog-consumer {
+    color: $green;
+    padding-left: 0;
+  }
+  .blog-trafic {
+    color: $blue;
+    padding-left: 0;
+  }
+}
+
+/*** sidebar lawer-result ***/
+/*** select tab ***/
+.tab-wrap {
+  background: $white;
+  border: 1px solid $input_bg;
+}
+
+.tab-content {
+  .lg-tab-panel.active {
+    padding: 0;
+  }
+  button {
+    background-color: $accent;
+    color: #fff;
+    font-size: $base_font_size;
+    font-family: $default-font-medium;
+    border: none;
+    padding: 10px 45px;
+    border-radius: 4px;
+    margin: 10px 15px 0;
+  }
+}
+
+.search-address {
+  min-height: 245px;
+}
+.select-wrap {
+  border-bottom: 1px solid $input_bg;
+  padding: 12px 20px;
+  text-align: center;
+  .select-group {
+    margin: 5px 0 10px;
+    label {
+      font-size: $base_font_size - 1;
+      display: block;
+      color: $title_bg;
+      font-family: $default-font-medium;
+      text-align: left;
+      width: 100%;
+    }
+    select {
+      width: 100%;
+      height: 40px;
+      border-radius: 4px;
+      background: $input_bg;
+      font-size: $base_font_size - 2;
+      border: none;
+    }
+    .select-box {
+      min-width: 100%;
+    }
+  }
+}
+
+/*** select checkbox ***/
+.sidebar-area {
+  .section-title h3 {
+    line-height: normal;
+    padding: 10px 0;
+  }
+  .control-group {
+    padding: 20px;
+    margin-bottom: 0;
+    &:last-child {
+      border-bottom: none;
+    }
+    label {
+      width: 100%;
+      font-size: $base_font_size - 1;
+      font-family: $default-font-regular;
+      color: $link;
+    }
+    .control-label {
+      color: $title_bg;
+      font-family: $default-font-medium;
+    }
+    .control-action {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sidebar-area .box-contact {
+  padding: 25px 20px;
+}
+
+.sidebar-contact {
+  margin-top: 30px;
+  th {
+    width: 50px;
+    padding: 8px 0;
+  }
+}
+
+/*** legal-edit ***/
+.legal-edit-category {
+  li {
+    list-style: none;
+    padding: 2px 10px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    margin-bottom: 4px;
+    a {
+      color: $white;
+      font-size: $base_font_size - 1;
+      font-family: $default-font-medium;
+    }
+    &.active, &:hover {
+      background: $light-yellow;
+      border-radius: 3px;
+      a {
+        color: $accent;
+      }
+    }
+  }
+}
+
+.sidebar-content {
+  .legal-edit-category {
+    margin: 0 -8px;
+  }
+}

@@ -1,0 +1,23 @@
+.admin-form-inline {
+  display: flex;
+  box-orient: horizontal;
+  box-direction: normal;
+  flex-direction: row;
+  align-items: center;
+  &:not(:last-child) {
+    margin: 0 0 20px;
+  }
+  label {
+    margin: 0 10px 0 0;
+  }
+  .field {
+    flex: 0 1 auto;
+    &:not(:last-child) {
+      padding: 0 10px 0 0;
+    }
+  }
+}
+
+.admin-label {
+  color: $title_bg;
+}

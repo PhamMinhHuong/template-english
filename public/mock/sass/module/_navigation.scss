@@ -1,0 +1,81 @@
+@import "../base/variables", "../base/mixins";
+
+/* Header */
+/* Todo style for header */
+
+/* Navigation Primary */
+.navigation {
+  background-color: $nav_bg;
+  li {
+    position: relative;
+    float: left;
+    &:not(:last-child) {
+      a {
+        &:after {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 27px;
+          background: url($icon-collection) no-repeat -69px 0px;
+          top: 50%;
+          right: 0;
+          @include css3-compatible(transform, translateY(-50%));
+        }
+      }
+    }
+    a {
+      color: $white;
+      line-height: 42px;
+      padding: 0 9px;
+      display: block;
+      font-size: $base_font_size - 3;
+      &:hover, &.active {
+        background-color: $nav_item_hover_bg;
+        &:after {
+          opacity: 0;
+        }
+      }
+    }
+    .navigation-mega {
+      opacity: 0;
+      position: absolute;
+      transition: 0.3s ease-out;
+      top: 100%;
+      background-color: $nav_item_hover_bg;
+      z-index: 9;
+      border: 1px solid $input-bg;
+      li {
+        width: 100%;
+        float: none;
+        border-top: 1px solid $input-bg;
+        a {
+          &:after {
+            position: static;
+            background: none;
+          }
+        }
+        &:first-child {
+          border: none;
+        }
+        &:hover {
+          a {
+            background: $nav_bg;
+          }
+        }
+      }
+    }
+    &:hover {
+      ul {
+        opacity: 1;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
+}
+
+.navigation-profile {
+  li a {
+    font-size: $base_font_size - 1;
+    padding: 0 20px;
+  }
+}

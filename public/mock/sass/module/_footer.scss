@@ -1,0 +1,54 @@
+@import "../base/variables", "../base/mixins";
+
+/* Footer */
+/* Todo style for footer */
+#footer {
+  background: $nav_item_hover_bg;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  .footer-primary {
+    padding: 50px 0;
+  }
+  .copyright {
+    color: $white;
+    font-size: $base_font_size - 1;
+    margin-bottom: 0;
+    font-family: "NotoSansCJKjp-DemiLight";
+  }
+  ul {
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        color: $white;
+        padding: 0 8px;
+        border-right: 1px solid $white;
+        font-size: $base_font_size - 1;
+        font-family: "NotoSansCJKjp-DemiLight";
+      }
+    }
+  }
+}
+
+/*** back to top ***/
+#toTop {
+  padding: 5px 3px;
+  background: #80817e;
+  color: $white;
+  position: fixed;
+  bottom: 176px;
+  width: 60px;
+  height: 60px;
+  right: 126px;
+  display: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: $base_font_size - 4;
+  font-family: "NotoSansCJKjp-Medium";
+  i {
+    display: block;
+    font-size: $base_font_size + 6;
+  }
+}

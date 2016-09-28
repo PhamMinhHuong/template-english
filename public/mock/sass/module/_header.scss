@@ -1,0 +1,211 @@
+@import "../base/variables", "../base/mixins";
+
+/* Header */
+/* Todo style for header */
+
+/*** banner ***/
+.banner {
+  background: url("../images/bg-banner.png") repeat-x;
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  .box-construction {
+    position: inherit;
+    h2 {
+      font-size: 24px;
+      color: #fff;
+      padding-left: 70px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-bottom: 0;
+      line-height: 38px;
+      font-family: "NotoSansMonoCJKjp-Bold";
+      &:before {
+        background: url("../images/img-home.png") no-repeat;
+        position: absolute;
+        content: "";
+        width: 49px;
+        height: 47px;
+        left: 0;
+      }
+    }
+  }
+  .box-link {
+    ul {
+      padding: 12px 20px;
+      float: left;
+      background: rgba(183, 27, 82, 0.5);
+      li {
+        float: left;
+        list-style: none;
+        margin-right: 10px;
+        a {
+          font-size: $base_font_size;
+          color: #fff;
+          line-height: 28px;
+          position: relative;
+          padding-left: 8px;
+          font-family: "NotoSansMonoCJKjp-Bold";
+          i {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  &.banner-blog {
+    background: url("../images/bg-banner-blog.png") no-repeat 0 0;
+    background-size: cover;
+    .blog-wrap {
+      padding: 30px 0;
+    }
+  }
+}
+
+/* Style for logo */
+.logo {
+  padding: 25px 0 0;
+  img {
+    vertical-align: top;
+  }
+  span {
+    font-size: $base_font_size + 6;
+    font-family: $default-font-bold;
+    color: $title_bg;
+    margin-left: 40px;
+  }
+}
+
+#logo {
+  p {
+    color: $light-black;
+    font-size: $base_font_size - 5;
+    margin-bottom: 0;
+  }
+}
+
+/* Style for link header */
+.link-header {
+  li {
+    padding: 0 18px 0 12px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 8px;
+      background: url($icon-collection) no-repeat 0 1px;
+      top: 50%;
+      left: 0;
+      @include css3-compatible(transform, translateY(-50%));
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+/* Header right */
+.header-right {
+  margin: 15px 0;
+  .header-right-top {
+    margin-bottom: 17px;
+  }
+}
+
+.visit {
+  padding-top: 10px;
+  span {
+    color: $link;
+    font-size: $base_font_size;
+    font-family: $default-font-medium;
+  }
+  a {
+    color: $purple;
+    font-size: $base_font_size - 2;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+  }
+}
+
+/* Style for header action */
+.header-action {
+  margin-left: 16px;
+  .lg-button {
+    margin: 0 3px;
+  }
+}
+
+/*** category-small ***/
+.banner-small {
+  background: rgb(69, 63, 108);
+  ul {
+    padding: 12px 10px;
+    float: left;
+    li {
+      float: left;
+      list-style: none;
+      margin-right: 15px;
+      padding: 0 10px;
+      a {
+        font-size: $base_font_size;
+        color: #fff;
+        line-height: 28px;
+        position: relative;
+        padding-left: 20px;
+        font-family: "NotoSansMonoCJKjp-Bold";
+        &:before {
+          background: url("../images/icon-link.png") no-repeat;
+          content: "";
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          left: 0px;
+          top: 2px;
+        }
+      }
+      &:hover {
+        background-color: #212b39;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+/*** banner-search-top ***/
+.lawer-search-top {
+  background: url("../images/bg-search-top.png") repeat-x;
+  min-height: 139px;
+  background-size: cover;
+  background-position: top center;
+  .box-construction h2 {
+    &:before {
+      background: url("../images/icon-cal1.png") no-repeat;
+      width: 35px;
+      height: 43px;
+      left: 8px;
+    }
+  }
+}
+
+/*** banner sign-up ***/
+.sign-up {
+  .logo {
+    padding-top: 5px;
+  }
+}
+
+.banner-sign-up {
+  background: url("../images/bg-signup.png") repeat;
+  min-height: 139px;
+  .box-construction h2 {
+    &:before {
+      background: url("../images/icon-signup.png") no-repeat;
+    }
+  }
+}
+.sign-up-lawer {
+  background: url("../images/bg-signup-lawer.png") repeat;
+}

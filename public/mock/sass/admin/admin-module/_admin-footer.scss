@@ -1,0 +1,14 @@
+.admin-footer {
+  background: $bg-admin-sidebar;
+  height: $admin-footer-height;
+  position: absolute;
+  left: $admin-sidebar-width;
+  width: calc( 100% - #{$admin-sidebar-width} );
+  bottom: 0;
+  .copyright {
+    color: #a3a3a3;
+    text-align: center;
+    margin: 0;
+    font-size: $base_font_size - 2;
+  }
+}

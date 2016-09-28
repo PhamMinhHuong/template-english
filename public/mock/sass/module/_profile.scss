@@ -1,0 +1,667 @@
+/*** profile ***/
+
+.lg-tab-content-wrap {
+  .tab-title-3-column {
+    .tab-title-item {
+      width: 33.3%;
+    }
+  }
+}
+
+.module-legal-profile {
+  .lg-avatar-big {
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.upload {
+  background: $purple;
+  color: $white;
+  font-family: $default-font-medium;
+  font-size: $base-font-size - 2;
+  width: 145px;
+  height: 35px;
+  margin: 0 auto;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  i {
+    font-size: $base-font-size - 1;
+    margin-right: 10px;
+  }
+}
+
+.module-upload {
+  margin-top: 15px;
+}
+
+.word-lawyer {
+  margin-top: 25px;
+  h3 {
+    i {
+      font-size: $base-font-size + 4;
+      margin-right: 12px;
+    }
+  }
+}
+
+.catch {
+  margin-bottom: 30px;
+  .title {
+    color: $link;
+    font-size: $base-font-size;
+    font-family: $default-font-medium;
+    margin-bottom: 10px;
+    display: block;
+  }
+  input {
+    height: 40px;
+    outline: none;
+    font-size: $base-font-size - 1;
+  }
+  .box-images {
+    margin-top: 25px;
+    .image-info {
+      position: relative;
+      padding-left: 0;
+      width: 165px;
+      height: 120px;
+      margin-right: 25px;
+      .delete-image {
+        position: absolute;
+        cursor: pointer;
+        right: -8px;
+        top: -11px;
+        i {
+          font-size: $base-font-size + 10;
+        }
+      }
+    }
+  }
+}
+
+.purport {
+  border: 2px solid $accent;
+  padding: 20px;
+  border-radius: 3px;
+  background: $white;
+}
+
+.corresponding-region {
+  border-bottom: 1px solid $input_bg;
+  .handling-info {
+    color: $link;
+    font-size: $base-font-size - 1;
+    a {
+      color: $accent;
+      font-size: $base-font-size - 2;
+      margin-left: 20px;
+    }
+  }
+  label {
+    font-size: $base-font-size - 1;
+    font-family: $default-font-medium;
+    color: $title_bg;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .control-group {
+    border: none;
+    .control-label {
+      width: 100%;
+    }
+    .control-action {
+      width: 100%;
+      border: 1px solid $input-bg;
+      padding: 15px;
+      height: 106px;
+      overflow: auto;
+    }
+    .max-text {
+      font-size: $base-font-size - 2;
+    }
+  }
+  .btn-checkbox {
+    background: $body_bg;
+    height: 40px;
+    width: 130px;
+    border-radius: 3px;
+    .switch {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+  }
+}
+
+.explanation {
+  background-color: $input_bg;
+  border-radius: 3px;
+  padding: 15px;
+  clear: both;
+  width: 100%;
+}
+
+.max-text {
+  font-size: $base-font-size - 2;
+  font-family: $default-font-demi;
+  span {
+    color: $accent;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 31px;
+  height: 15px;
+  padding: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.switch-label:before, .switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+
+.switch-label:before {
+  content: attr(data-off);
+  right: 11px;
+  color: #aaa;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.switch-label:after {
+  content: attr(data-on);
+  left: 11px;
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.switch-input:checked ~ .switch-label {
+  background: $accent;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.switch-input:checked ~ .switch-label:before {
+  opacity: 0;
+}
+
+.switch-input:checked ~ .switch-label:after {
+  opacity: 1;
+}
+
+.switch-handle {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.switch-handle:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  background: $dark-white;
+  border-radius: 6px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.switch-input:checked ~ .switch-handle {
+  left: 14px;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.module-img {
+  background-color: $bg-img;
+  clear: both;
+  a {
+    display: block;
+  }
+  span {
+    color: $light-grey;
+    font-size: $base-font-size + 2;
+    font-family: $default-font-medium;
+  }
+}
+
+.agency-access {
+  span {
+    display: block;
+    color: $title_bg;
+    font-size: $base-font-size;
+    font-family: $default-font-bold;
+    margin-bottom: 8px;
+  }
+  p {
+    font-family: $default-font-medium;
+  }
+  .point {
+    display: inline;
+    color: $link;
+    font-size: $base_font_size - 1;
+    font-family: $default-font-regular;
+  }
+}
+
+.table-user {
+  border: 1px solid $input_bg;
+  width: 100%;
+  th {
+    background-color: $bg-th;
+    color: $title_bg;
+    font-size: $base-font-size - 1;
+    padding: 20px;
+    vertical-align: top;
+  }
+  th, td {
+    border: 1px solid $input_bg;
+  }
+  td {
+    padding: 3px 6px;
+    span {
+      line-height: 40px;
+      float: left;
+      margin: 0 15px;
+    }
+  }
+  .input-group-special {
+    width: 149px;
+    margin-right: 15px;
+  }
+  .form-control {
+    background: $input_bg;
+  }
+  input {
+    height: 40px;
+    border-radius: 3px;
+  }
+  .input-group-large {
+    width: 100%;
+    clear: both;
+    .btn-select {
+      margin-bottom: 10px;
+      .selectBox-dropdown {
+        min-width: inherit;
+      }
+    }
+    label {
+      float: left;
+      margin: 12px 10px 12px 10px;
+      width: 46px;
+    }
+    .btn-to {
+      width: 15px;
+    }
+    .form-control-lg {
+      width: calc(100% - 66px);
+    }
+  }
+  .input-group-small {
+    width: 71px;
+    margin-right: 15px;
+  }
+  .input-group-medium {
+    width: 326px;
+  }
+  .form-field {
+    min-width: 130px;
+  }
+}
+
+.legal-profile {
+  .lg-tab-content-wrap .lg-tab-title {
+    background-color: $white;
+  }
+}
+
+.lawyer-profile-info {
+  h3 i {
+    margin-right: 12px;
+    font-size: $base-font-size + 4;
+  }
+}
+
+.legal-profile {
+  .module-legal-profile {
+    p {
+      text-align: center;
+      color: $link;
+      font-family: $default-font-medium;
+      margin-bottom: 10px;
+    }
+    .lg-avatar-sobig {
+      float: none;
+      a {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .more {
+    color: $purple;
+    font-size: $base-font-size;
+    font-family: $default-font-medium;
+  }
+}
+
+.legal-profile-info {
+  font-size: $base_font_size - 1;
+  border-top: 1px solid $input_bg;
+  padding-top: 20px;
+  margin-top: 21px;
+  h4 {
+    color: $title_bg;
+    font-family: $default-font-bold;
+    font-size: $base_font_size - 1;
+    margin-bottom: 17px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.required {
+  font-size: $base-font-size - 4;
+  font-family: $default-font-regular;
+  border-radius: 3px;
+  padding: 0 2px;
+  margin-left: 10px;
+}
+
+.info-map {
+  label {
+    font-size: $base-font-size - 1;
+    font-family: $default-font-bold;
+    color: $title_bg;
+    float: left;
+    padding-right: 25px;
+    line-height: 25px;
+  }
+  .control-group {
+    border: none;
+  }
+}
+
+.paid-plan {
+  background: $light-yellow;
+  padding: 20px 25px;
+  h4 {
+    font-family: $default-font-bold;
+    font-size: $base-font-size;
+    color: $title_bg;
+    padding-bottom: 10px;
+    border: solid $input_bg;
+    border-width: 0 0 2px;
+  }
+}
+
+.increase {
+  .title {
+    font-size: $base-font-size - 1;
+    font-family: $default-font-medium;
+    color: $accent;
+    i {
+      margin-right: 15px;
+      font-size: $base-font-size + 4;
+    }
+  }
+  p {
+    font-size: $base-font-size - 1;
+  }
+}
+
+.select-info {
+  margin-top: 10px;
+  .btn-select {
+    margin-right: 15px;
+  }
+}
+
+.lg-tab-content-wrap .tab-hidden {
+  color: $input_bg;
+}
+
+/*** no-fill-data ***/
+.catch-info {
+  min-height: 195px;
+}
+
+.purport-info {
+  min-height: 320px;
+}
+
+.price-list {
+  width: 100%;
+  th, td {
+    border: 1px solid $input_bg;
+  }
+  th, td {
+    padding: 7px;
+    vertical-align: top;
+    .explanation {
+      min-height: 95px;
+    }
+    .purport {
+      padding: 15px;
+      background: $white;
+    }
+  }
+  thead {
+    background: $title_bg;
+    th {
+      color: $white;
+      font-family: $default-font-medium;
+      font-size: $base-font-size - 1;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid $bd-th;
+    }
+  }
+}
+
+.add-row {
+  color: $white;
+  background: #5a5858;
+  font-size: $base-font-size - 2;
+  font-family: $default-font-medium;
+  padding: 6px 10px;
+  margin: 10px 0 20px;
+  border-radius: 3px;
+  i {
+    margin-right: 10px;
+  }
+}
+
+.office-location {
+  width: 100%;
+  th {
+    padding: 10px 0;
+  }
+  td {
+    padding: 10px 0 10px 20px;
+  }
+  th {
+    text-align: right;
+    font-size: $base-font-size - 1;
+    font-family: $default-font-medium;
+  }
+  td {
+    text-align: left;
+  }
+  span {
+    margin: 0 10px;
+    line-height: 40px;
+  }
+  input {
+    height: 40px;
+  }
+}
+
+.town-name {
+  height: 80px;
+}
+
+.btn-input-small {
+  max-width: 85px;
+}
+
+.btn-select-medium {
+  max-width: 306px;
+}
+
+.office-access {
+  height: 135px;
+}
+
+.phone-number {
+  span {
+    font-family: $default-font-demi;
+    font-size: $base-font-size - 1;
+    margin-right: 20px;
+    line-height: 40px;
+  }
+  .forwarding-phone {
+    margin: 0 20px;
+  }
+}
+
+.btn-input-medium {
+  max-width: 325px;
+}
+
+.btn-input-special {
+  max-width: 525px;
+}
+
+.btn-input {
+  width: 100%;
+}
+
+.office-house {
+  th, td {
+    text-align: left;
+  }
+}
+
+.feature {
+  height: 65px;
+}
+
+.nurse-belong {
+  color: $title_bg;
+  span {
+    font-family: $default-font-bold;
+  }
+}
+
+.strength {
+  dd, dt {
+    float: left;
+  }
+  dd {
+    width: 65px;
+    padding-right: 15px;
+    line-height: 65px;
+    font-family: $default-font-medium;
+  }
+  dt {
+    width: calc(100% - 65px);
+  }
+}
+
+.profile-images h3 i {
+  font-size: $base-font-size + 4;
+  margin-right: 15px;
+}
+
+.btn-upload-credit {
+  background: $light-black;
+  margin: 0;
+  position: relative;
+  color: $white;
+  padding: 10px 28px;
+  max-width: 255px;
+  width: 100%;
+  span {
+    left: auto;
+    font-size: $base-font-size;
+  }
+  i {
+    font-size: $base-font-size;
+  }
+}
+
+.control-select-small {
+  min-height: 95px;
+}
+
+.label-region {
+  margin-right: 22px;
+}
+
+.office-information {
+  color: $light-black;
+  font-size: $base-font-size - 1;
+}
